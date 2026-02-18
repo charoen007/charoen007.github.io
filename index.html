@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Charoen Mithongsaen— CV</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#111a2e; --text:#e8eefc; --muted:#b6c2e2;
+      --accent:#6ea8fe; --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 15% 10%, rgba(110,168,254,.18), transparent 55%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(122,255,196,.10), transparent 60%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:980px; margin:0 auto; padding:32px 18px 64px}
+    .header{
+      display:flex; gap:18px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+      padding:22px 22px; border:1px solid var(--line); background:rgba(17,26,46,.75);
+      border-radius:18px; -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+    }
+    .name{font-size:28px; font-weight:800; letter-spacing:.2px; margin:0}
+    .role{margin:6px 0 0; color:var(--muted)}
+    .pillrow{display:flex; gap:10px; flex-wrap:wrap; margin-top:14px}
+    .pill{border:1px solid var(--line); padding:7px 10px; border-radius:999px; color:var(--muted); font-size:13px}
+    .cta{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; border-radius:12px; border:1px solid var(--line);
+      background:rgba(255,255,255,.03); color:var(--text);
+    }
+    .btn:hover{background:rgba(255,255,255,.06); text-decoration:none}
+    .grid{display:grid; grid-template-columns: 1.15fr .85fr; gap:16px; margin-top:16px}
+    @media (max-width:880px){ .grid{grid-template-columns:1fr} }
+    .card{
+      padding:18px 18px; border:1px solid var(--line); background:rgba(17,26,46,.6);
+      border-radius:18px;
+    }
+    .h{margin:0 0 10px; font-size:16px; letter-spacing:.2px}
+    .muted{color:var(--muted)}
+    ul{margin:10px 0 0; padding-left:18px}
+    li{margin:6px 0}
+    .item{padding:12px 0; border-top:1px solid var(--line)}
+    .item:first-of-type{border-top:none; padding-top:0}
+    .k{display:flex; gap:10px; justify-content:space-between; flex-wrap:wrap}
+    .k strong{font-weight:700}
+    .tagrow{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+    .tag{font-size:12px; padding:6px 9px; border-radius:999px; border:1px solid var(--line); color:var(--muted)}
+    footer{margin-top:18px; color:var(--muted); font-size:12px; text-align:center}
+    .small{font-size:13px}
+    .mono{font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size:12.5px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <section class="header">
+      <div>
+        <h1 class="name"></h1>
+        <p class="role">Computer Science Student • Python & Git Beginner Projects</p>
+
+        <div class="pillrow">
+          <span class="pill">Location: Thailand</span>
+          <span class="pill">Focus: Git practice, Python, OOP</span>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a class="btn" href="mailto:4170675@gmail.com" target="_blank" rel="noreferrer noopener">✉️ Email</a>
+        <a class="btn" href="https://github.com/charoen007" target="_blank" rel="noreferrer noopener">💻 GitHub</a>
+        <!-- ถ้าคุณอัปโหลดไฟล์ PDF ไว้ใน repo ชื่อ CV.pdf ให้เอาคอมเมนต์ออก -->
+        <!-- <a class="btn" href="./CV.pdf" target="_blank" rel="noreferrer">⬇️ Download PDF</a> -->
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2 class="h">Profile</h2>
+        <p class="muted">
+          I am learning Git/GitHub workflow and Python programming. This page is my simple CV/portfolio
+          showing my academic projects and practice repositories.
+        </p>
+
+        <div class="item">
+          <h2 class="h">Projects</h2>
+
+          <div class="item">
+            <div class="k">
+              <strong>Calculator (Python)</strong>
+              <span class="muted small">Git practice • CLI</span>
+            </div>
+            <div class="small muted">
+              Repository:
+              <a href="https://github.com/charoen007/Assignment3_calculator" target="_blank" rel="noreferrer noopener">
+                github.com/charoen007/Assignment3_calculator
+              </a>
+            </div>
+            <ul class="small">
+              <li>Implemented basic operations and improved code readability with comments.</li>
+              <li>Practiced Git workflow: clone → edit → add → commit → push.</li>
+            </ul>
+            <div class="tagrow">
+              <span class="tag">Python</span>
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+            </div>
+          </div>
+
+     
+          <div class="item">
+            <div class="k">
+              <strong>Next Project (Add yours)</strong>
+              <span class="muted small">Academic</span>
+            </div>
+            <div class="small muted">Repository: <span class="mono">https://github.com/charoen007/your-repo</span></div>
+            <ul class="small">
+              <li>calculator</li>
+              <li>quize game</li>
+            </ul>
+            <div class="tagrow">
+              <span class="tag">Tag</span>
+              <span class="tag">Tag</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <h2 class="h">Skills</h2>
+        <ul class="small">
+          <li><strong>Git & GitHub:</strong> clone, status, add, commit, push</li>
+          <li><strong>Python:</strong> basic syntax, functions, OOP basics</li>
+          <li><strong>English:</strong> able to study and write simple documentation</li>
+        </ul>
+
+        <div class="item">
+          <h2 class="h">Education</h2>
+          <div class="small">
+            <div class="k">
+              <strong>Computer Science (Student)</strong>
+              <span class="muted">2026</span>
+            </div>
+            <div class="muted">Pathway program</div>
+          </div>
+        </div>
+
+        <div class="item">
+          <h2 class="h">Contact</h2>
+          <div class="small muted">
+            Email: <span class="mono">u4170675@gmail.com</span><br />
+            GitHub: <a href="https://github.com/charoen007" target="_blank" rel="noreferrer noopener">github.com/charoen007</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Charoen mithongsaen• Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
